@@ -32,7 +32,7 @@ const Page = () => {
 				<Route exact path="/">
 					<Redirect to="/regular" />
 				</Route>
-				<Route exact path="/memes-site">
+				<Route exact path="/meme_site">
 					<Redirect to="/regular" />
 				</Route>
 				<Route path="/regular">
