@@ -1,10 +1,8 @@
 # memes-site
 
-> A project made with technologies: React, React-Redux
+A project made with technologies: React, React-Redux
 
 github-pages: https://Zasada94.github.io/meme_site
-
----
 
 The task of the application is:
 
