@@ -21,7 +21,3 @@ cd memes-site
 npm install
 
 npm start
-
-```
-
-```
