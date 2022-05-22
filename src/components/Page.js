@@ -40,14 +40,17 @@ const Page = () => {
 				</Route>
 
 				<Route path="/hot">
+					<Redirect to="/hot" />
 					<MemeList array={hot} />
 				</Route>
 
 				<Route path="/favorites">
+					<Redirect to="/favorites" />
 					<MemeList array={favorites} />
 				</Route>
 
 				<Route path="/add_meme">
+					<Redirect to="/add_meme" />
 					<FormAddMeme />
 				</Route>
 				<Route path="*"></Route>
