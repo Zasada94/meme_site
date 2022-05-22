@@ -35,21 +35,21 @@ const Page = () => {
 				<Route exact path="/meme_site">
 					<Redirect to="/regular" />
 				</Route>
-				<Route path="/regular">
+				<Route exact path="/regular">
+					<Redirect to="/regular" />
 					<MemeList array={regular} />
 				</Route>
 
-				<Route path="/hot">
+				<Route exact path="/hot">
 					<Redirect to="/hot" />
 					<MemeList array={hot} />
 				</Route>
 
-				<Route path="/favorites">
-					<Redirect to="/favorites" />
+				<Route exact path="/favorites">
 					<MemeList array={favorites} />
 				</Route>
 
-				<Route path="/add_meme">
+				<Route exact path="/add_meme">
 					<Redirect to="/add_meme" />
 					<FormAddMeme />
 				</Route>
