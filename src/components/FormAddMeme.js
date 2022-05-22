@@ -34,6 +34,9 @@ const defaultValues = {
 	author: "",
 	img: "",
 };
+function Alert(props) {
+	return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
 const FormAddMeme = () => {
 	const dispatch = useDispatch();
@@ -80,10 +83,6 @@ const FormAddMeme = () => {
 		setMessage("Meme has been added");
 		reset();
 	};
-
-	function Alert(props) {
-		return <MuiAlert elevation={6} variant="filled" {...props} />;
-	}
 
 	const handleClose = (reason) => {
 		if (reason === "clickaway") {
