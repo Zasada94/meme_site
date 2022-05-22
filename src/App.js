@@ -40,7 +40,7 @@ export default function App() {
 	const classes = useStyles();
 
 	return (
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<ThemeProvider theme={theme}>
 				<div className={classes.root} style={{ minHeight: "100vh" }}>
 					<Header />
